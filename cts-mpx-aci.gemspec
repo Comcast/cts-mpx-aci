@@ -7,13 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Cts::Mpx::Aci::VERSION
   spec.authors       = ["Ernie Brodeur"]
   spec.email         = ["ernie.brodeur@cable.comcast.com"]
-
   spec.summary       = "mpx account continuous integration driver."
-
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  spec.metadata['allowed_push_host'] = "https://repo.theplatform.com"
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
