@@ -1,0 +1,17 @@
+[
+  {
+    "service": "Task Service",
+    "endpoint": "TaskTemplate",
+    "fields": [
+      "id",
+      "guid",
+      "title",
+      "description",
+      "adminTags",
+      "ownerId",
+      "taskArguments",
+      "taskType",
+      "taskTypeRevision"
+    ]
+  }
+]

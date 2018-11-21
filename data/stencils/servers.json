@@ -1,0 +1,31 @@
+[
+  {
+    "service": "Media Data Service",
+    "endpoint": "Server",
+    "fields": [
+      "id",
+      "guid",
+      "title",
+      "description",
+      "allowedAccountIds",
+      "disabled",
+      "failoverStreamingUrl",
+      "formats",
+      "downloadUrl",
+      "iconUrl",
+      "maximumFolderCount",
+      "organizeByOwner",
+      "organizeForVolume",
+      "ownerId",
+      "password",
+      "privateKey",
+      "promptsToDownload",
+      "pullUrl",
+      "storageUrl",
+      "streamingUrl",
+      "userName",
+      "zones",
+      ":"
+    ]
+  }
+]

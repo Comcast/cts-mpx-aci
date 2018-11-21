@@ -1,0 +1,37 @@
+[
+  {
+    "service": "Media Data Service",
+    "endpoint": "MediaField",
+    "fields": [
+      "id",
+      "guid",
+      "title",
+      "description",
+      "descriptionLocalized",
+      "fullTitle",
+      "fullTitleLocalized",
+      "label",
+      "labelLocalized",
+      "level",
+      "order",
+      "parentId",
+      "scheme",
+      "titleLocalized",
+      "allowedValues",
+      "dataStructure",
+      "dataType",
+      "defaultValue",
+      "fieldName",
+      "includeInTextSearch",
+      "isUnique",
+      "length",
+      "namespace",
+      "namespacePrefix",
+      "notifyAlways",
+      "notifyChanges",
+      "notifyDelete",
+      "ownerId",
+      "searchFieldName"
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+passthrough '/assets/**/*'
+
+### Markdown
+compile '/**/*.md' do
+  filter :kramdown,
+         input:                   'GFM',
+         syntax_highlighter:      'rouge',
+         syntax_highlighter_opts: {
+           disable: false
+         }
+  layout '/default.*'
+end
+
+route '/README.md' do
+  '/index.html'
+end
+
+route '/*.md' do
+  item.identifier.without_ext + '.html'
+end
+
+### Reference docs
+compile '/doc/*.html' do
+end
+
+route '/doc/**/*' do
+  item.identifier.to_s
+end
+
+### Coverage
+compile '/coverage/*.html' do
+  layout '/default.*'
+end
+
+route '/coverage/**/*' do
+  item.identifier.to_s
+end
+
+### Specifications
+compile '/specifications.html' do
+  layout '/default.*'
+end
+
+route '/specifications.html' do
+  item.identifier.to_s
+end
+
+### Everything else
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*', :erb

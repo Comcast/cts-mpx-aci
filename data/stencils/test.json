@@ -1,0 +1,13 @@
+[
+  {
+    "service": "Media Data Service",
+    "endpoint": "Server",
+    "fields": [
+      "id",
+      "guid",
+      "title",
+      "description",
+      "ownerId"
+    ]
+  }
+]
