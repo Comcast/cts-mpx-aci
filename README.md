@@ -4,31 +4,6 @@ The ACI (Account Continuous Integration) toolkit allows you to record, image, an
 
 ## Installation
 
-### From GHE
-
-Clone the repo to a local directory:
-
-    git clone https://github.comcast.com/thePlatform/cts-mpx-aci
-
-Build the gem:
-
-    cd cts-mpx-aci
-    rake build
-
-Install the gem:
-
-    gem install pkg/*.gem
-
-### From a gem repo
-
-Make sure its source exists in your gem sources.
-
-To add a source to the gem command:
-
-    gem source -a https://ctsgems.corp.theplatform.com
-
-Once that is done:
-
     gem install cts-mpx-aci
 
 ## Requirements
