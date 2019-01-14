@@ -3,7 +3,7 @@ PATH
   specs:
     cts-mpx-aci (2.0.0)
       creatable
-      cts-mpx (~> 1.1)
+      cts-mpx (~> 1.1.2)
       diffy
       logging
       oj
@@ -19,11 +19,11 @@ GEM
     coderay (1.1.2)
     colored (1.2)
     concurrent-ruby (1.1.2)
-    creatable (2.2.1)
+    creatable (2.3.1)
     cri (2.15.2)
       colored (~> 1.2)
-    cts-mpx (1.1.1)
-      creatable (~> 2.2.1)
+    cts-mpx (1.1.2)
+      creatable (~> 2.3.1)
       excon
       oj (= 3.5.0)
     ddmemoize (1.0.0)

@@ -11,6 +11,7 @@ module Theplatform
           Cts::Mpx::Aci::Transformations.traverse_for(to_hash['entry'], :transform) do |_k, v|
             next if v.start_with? "http://access.auth.theplatform.com/data/Account"
             next if v == "urn:cts:aci:target-account"
+
             dependencies.push v
             v
           end
@@ -46,6 +47,7 @@ module Theplatform
         # @return [String] computed filename of the entry.
         def filename
           raise 'Entry must include an guid field' unless fields.include? 'guid'
+
           "#{entry['guid']}.json"
         end
 
@@ -69,6 +71,7 @@ module Theplatform
           raise ArgumentError, 'an entry must be supplied' unless other_entry.class == self.class
           raise ArgumentError, 'both entries must have the same service' unless service == other_entry.service
           raise ArgumentError, 'both entries must have the same endpoint' unless endpoint == other_entry.endpoint
+
           Diffy::Diff.new(to_s, other_entry.to_s).to_s
         end
 
